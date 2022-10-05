@@ -44,7 +44,7 @@ function addTodo(value){
   itemButtonNode.innerHTML = "delete";
   listItemNode.append(itemButtonNode);
   listNode.append(listItemNode);
-  checkNode.onchange = (event) => {
+  listNode.onchange = (event) => {
     const isChecked = event.target.checked;
     itemButtonNode.setAttribute("disabled", "disabled");
     listItemNode.classList.add("done");
